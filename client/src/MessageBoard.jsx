@@ -13,7 +13,7 @@ export default function App() {
 
   async function getPosts() {
     try {
-      const response = await fetch("https://databaseproject-1.onrender.com");
+      const response = await fetch("https://databaseproject-1.onrender.com/posts");
       const data = await response.json();
       setPosts(data);
       setLoading(false);
