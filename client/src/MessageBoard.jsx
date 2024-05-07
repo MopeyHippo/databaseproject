@@ -25,7 +25,7 @@ export default function App() {
 
   async function handleDeletePost(postId) {
     try {
-      await fetch(`https://databaseproject-1.onrender.com${postId}`, {
+      await fetch(`https://databaseproject-1.onrender.com/posts/${postId}`, {
         method: 'DELETE'
       });
       getPosts();
