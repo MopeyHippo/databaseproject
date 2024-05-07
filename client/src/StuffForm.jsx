@@ -16,7 +16,7 @@ export default function StuffForm() {
     event.target.reset();
 
     console.log(form);
-    fetch("http://localhost:8080/posts", {
+    fetch("https://databaseproject-e53f.onrender.com", {
       method: "POST",
       body: JSON.stringify(form),
       headers: {
